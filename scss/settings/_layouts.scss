@@ -1,0 +1,11 @@
+@mixin paddings {
+    @for $i from 1 to 20 {
+        .p-#{$i * 5} {
+            padding: 0 $i * 5%;
+        }
+    }
+}
+
+// Paddings
+@include paddings(); 
+

@@ -1,0 +1,29 @@
+.nav {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  z-index: $z-index-fixed;
+  justify-content: space-between;
+  position: fixed;
+
+
+  &_logo {
+    color: $color-dark;
+    font-size: $font-size-desktop-h2;
+    font-weight: 700;
+    color: $color-white;
+    
+  }
+  &_menu {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  &_item {
+    margin-left: 1rem;
+    font-weight: 400;
+  }
+
+
+}
