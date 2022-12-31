@@ -1,29 +1,86 @@
 .nav {
-  min-height: 10vh;
+  min-height: 15vh;
   display: flex;
-  align-items: center;
-  z-index: $z-index-fixed;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: $z-index-fixed;
+  // justify-content: space-between;
   position: fixed;
 
-
-  &_logo {
-    color: $color-dark;
-    font-size: $font-size-desktop-h2;
-    font-weight: 700;
-    color: $color-white;
-    
+  @include bp($mobile) {
+    height: auto;
   }
+
   &_menu {
     display: flex;
     align-items: center;
-    
+
+    @include bp($mobile) {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      left: 0;
+      // top: 0;
+      transition: top, 300ms;
+      padding-top: 25%;
+      padding-left: 5%;
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      background-color: white;
+    }
+  }
+  &_link {
+    @include bp($mobile) {
+      color: $color-dark;
+      line-height: 2.5rem;
+    }
+  }
+  &_logo {
+    font-size: $font-size-desktop-h2;
+    font-weight: 700;
+
+    @include bp($mobile) {
+      font-size: $font-size-mobile-h2;
+      z-index: $z-index-menu;
+    }
   }
 
   &_item {
     margin-left: 1rem;
-    font-weight: 400;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+  }
+}
+
+.open_menu {
+  display: none;
+
+  @include bp($mobile) {
+    display: flex;
+    z-index: $z-index-menu;
+  }
+}
+
+.social {
+  &_menu {
+    display: none;
+    color: $color-dark;
+
+    @include bp($mobile) {
+      display: flex;
+      z-index: $z-index-menu;
+      color: $color-dark;
+
+      width: 100%;
+      margin-top: 5rem;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
   }
 
-
+  &_item {
+    margin-right: 1rem;
+  }
 }

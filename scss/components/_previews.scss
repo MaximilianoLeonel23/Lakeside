@@ -1,0 +1,47 @@
+.section_previews {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5%;
+    background-color: $color-dark;
+    height: 100vh;
+
+    @include bp($mobile) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.article_preview {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.25rem;
+    background-color: lightblue;
+    position: relative;
+    
+
+    & p {
+        margin: 2rem 0;
+        line-height: 1.5rem;
+        
+    }
+    & img {
+    border-radius: 0.25rem;
+    max-width: 25rem;
+
+    
+    
+    
+
+    }
+
+    & a {
+        position: absolute;
+        bottom: 5%;
+        right: 5%;
+        color: $color-dark;
+
+
+    }
+
+}
+
+

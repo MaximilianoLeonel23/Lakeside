@@ -5,9 +5,34 @@
   height: 100vh;
   display: flex;
   align-items: center;
+
+  @include bp($mobile) {
+    flex-direction: column;
+    height: auto;
+    
+  }
   &_description {
     color: $color-white;
     z-index: $z-index-normal;
+    width: 50%;
+
+    @include bp($mobile) {
+      text-align: center;
+      width: 90%;
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+    }
+    p {
+      line-height: 1.75rem;
+      color: darken($color-white, 5);
+      font-size: $font-size-desktop-p;
+      font-weight: 300;
+
+      @include bp($mobile) {
+        font-size: $font-size-mobile-p;
+        line-height: 1.5rem;
+      }
+    }
   }
 
   &_background--overlay {
@@ -17,14 +42,30 @@
     left: 0;
 
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.35);
   }
- 
 }
-.description_line {
-    z-index: $z-index-normal;
-    height: 5px;
-    width: 10rem;
-    color: $color-white;
+.description {
+  &_line {
+    height: 1px;
+    width: 100%;
+    background-color: $color-white;
     margin: 1rem 0;
   }
+  &_title {
+    line-height: 2.5rem;
+    font-size: $font-size-desktop-h2;
+    color: $color-white;
+
+    @include bp($mobile) {
+      line-height: 2rem;
+      font-size: $font-size-mobile-h2;
+    }
+    
+  }
+}
+
+.scroll_container {
+  width: 50%;
+  text-align: right;
+}

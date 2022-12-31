@@ -1,0 +1,35 @@
+.book_btn {
+  padding: 1rem 2rem;
+  color: $color-primary-alt;
+  border: 2px solid $color-primary-alt;
+  background-color: transparent;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  font-weight: 900;
+  letter-spacing: 0.25rem;
+
+  @include bp($mobile) {
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.15rem;
+    margin-top: 2rem;
+  }
+
+  &:hover {
+    background-color: $color-primary-alt;
+    color: $color-white;
+    cursor: pointer;
+    transition: 300ms;
+  }
+}
+
+// SVG btn - scroll
+
+.scroll_btn {
+  color: $color-primary-alt;
+
+  @include bp($mobile) {
+    display: none;
+  }
+}
+
