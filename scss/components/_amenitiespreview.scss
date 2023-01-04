@@ -1,0 +1,83 @@
+.amenities {
+  &_previews {
+    background-color: $color-dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 7.5rem;
+    padding-bottom: 5rem;
+  }
+
+  &_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5%;
+    width: 100%;
+
+    @include bp($mobile) {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    
+  }
+
+  &_img--card {
+    max-width: 20rem;
+    border-radius: 15px;
+
+    @include bp($mobile) {
+        max-width: 30rem;
+        height: 20rem;
+        margin-top: 5%;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+  }
+
+  &_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $color-white;
+    width: 100%;
+    margin-top: 3.5rem;
+    color: $color-white;
+    padding: 2.5rem;
+    position: relative;
+
+    & svg {
+      position: absolute;
+      right: 2.5rem;
+      top: 2rem;
+      color: $color-primary;
+    }
+
+    & h4 {
+        font-size: $font-size-desktop-h3;
+    }
+  }
+
+  &_list {
+    position: relative;
+    left: 2rem;
+    top: 2rem;
+    margin-bottom: 2rem;
+    list-style: circle;
+    
+  }
+
+  &_list--item {
+    line-height: 1.5rem;
+    list-style: circle;
+    color: darken($color-white, 10);
+  }
+}
+
+// .hidden {
+//     display: none;
+// }

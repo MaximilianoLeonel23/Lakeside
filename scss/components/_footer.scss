@@ -1,0 +1,34 @@
+.footer {
+    
+
+    &_container {
+        display: flex;
+        justify-content: space-between;
+        padding: 5% 0;
+
+        @include bp($mobile) {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &_information {
+        line-height: 3rem;
+        color: $color-dark;
+        @include bp($mobile) {
+            margin: 2rem 0;
+        }
+    }
+    &_socialmedia {
+        display: flex;
+        @include bp($mobile) {
+            margin-bottom: 2rem;
+        }
+    }
+    &_link {
+        margin-left: 1rem;
+        color: $color-dark;
+        
+    }
+}
+

@@ -9,7 +9,8 @@
   @include bp($mobile) {
     flex-direction: column;
     height: auto;
-    
+    background-image: url(/img/cabinLakeMovil.JPG);
+    background-position: center;
   }
   &_description {
     color: $color-white;
@@ -61,7 +62,6 @@
       line-height: 2rem;
       font-size: $font-size-mobile-h2;
     }
-    
   }
 }
 

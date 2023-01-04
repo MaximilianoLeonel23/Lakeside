@@ -1,0 +1,50 @@
+.cabins_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10% 0 5% 0;
+
+  &--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: $color-white;
+    column-gap: 5%;
+    margin: 2rem 0;
+
+    @include bp($mobile) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 2rem;
+        
+    }
+  }
+
+  & p {
+    line-height: 2rem;
+    color: darken($color-white, 10);
+    @include bp($mobile) {
+        font-size: $font-size-mobile-p;
+    }
+  }
+
+  &--card {
+    display: grid;
+    row-gap: 1rem;
+
+    @include bp($mobile) {
+        text-align: center;
+    }
+  }
+
+  & h3 {
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    @include bp($mobile) {
+        font-size: $font-size-mobile-h3;
+    }
+  }
+
+  
+
+  
+}
