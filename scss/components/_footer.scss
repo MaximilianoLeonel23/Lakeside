@@ -4,7 +4,7 @@
     &_container {
         display: flex;
         justify-content: space-between;
-        padding: 1rem 0;
+        padding: 2rem 0;
 
         @include bp($mobile) {
             flex-direction: column;

@@ -34,7 +34,7 @@
   &_link {
     @include bp($mobile) {
       color: $color-dark;
-      line-height: 2.5rem;
+      line-height: 2rem;
     }
   }
   &_logo {
@@ -87,10 +87,8 @@
 
   &_item {
     margin-right: 1rem;
-
     & a {
       color: $color-dark;
-
       &:active {
           color: $color-primary-alt;
       }

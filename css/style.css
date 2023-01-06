@@ -147,7 +147,7 @@ a {
   color: #fafafa; }
 
 a:hover {
-  color: #f2c879;
+  color: #F2B035;
   cursor: pointer; }
 
 img {
@@ -186,7 +186,7 @@ img {
   @media (min-width: 300px) and (max-width: 500px) {
     .nav_link {
       color: #2c2c2c;
-      line-height: 2.5rem; } }
+      line-height: 2rem; } }
   .nav_logo {
     font-size: 1.5rem;
     font-weight: 600; }
@@ -227,30 +227,30 @@ img {
   .social_item a {
     color: #2c2c2c; }
     .social_item a:active {
-      color: #edb54b; }
+      color: #F2B035; }
 
-.book--btn {
-  background-color: #edb54b;
-  border: 2px solid #edb54b;
+.solid--btn {
+  background-color: #F2B035;
+  border: 2px solid #F2B035;
   padding: 0.75rem 2rem;
   font-size: 1rem;
-  color: #2c2c2c;
+  color: #684607;
   border-radius: 0.75rem;
   font-weight: 500; }
   @media (min-width: 300px) and (max-width: 500px) {
-    .book--btn {
-      padding: 0.5rem 1.5rem;
+    .solid--btn {
+      padding: 0.75rem 2rem;
       font-weight: 500;
       font-size: 0.85rem; } }
-  .book--btn:hover {
-    background-color: #f2c879;
-    border: 2px solid #f2c879;
-    color: #2c2c2c;
+  .solid--btn:hover {
+    background-color: #F4BA4E;
+    border: 2px solid #F4BA4E;
+    color: #684607;
     cursor: pointer;
     transition: 300ms; }
 
 .scroll_btn {
-  color: #edb54b; }
+  color: #F2B035; }
   @media (min-width: 300px) and (max-width: 500px) {
     .scroll_btn {
       display: none; } }
@@ -267,11 +267,11 @@ img {
   .ghost--btn a {
     color: #fafafa; }
   .ghost--btn:hover {
-    background-color: #edb54b;
+    background-color: #F2B035;
     color: #2c2c2c;
     cursor: pointer;
     transition: 300ms;
-    border: 2px solid #edb54b; }
+    border: 2px solid #F2B035; }
   @media (min-width: 300px) and (max-width: 500px) {
     .ghost--btn {
       padding: 0.5rem 1.25rem;
@@ -402,19 +402,19 @@ img {
     right: 15%;
     color: #fafafa; }
   .article_preview a:hover {
-    color: #f2c879; }
+    color: #F2B035; }
   .article_preview svg {
     position: absolute;
     bottom: 4%;
     right: 5%; }
   .article_preview svg:hover {
-    color: #f2c879;
+    color: #F2B035;
     cursor: pointer; }
 
 .footer_container {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 0; }
+  padding: 2rem 0; }
   @media (min-width: 300px) and (max-width: 500px) {
     .footer_container {
       flex-direction: column;
@@ -449,7 +449,7 @@ img {
   color: #2c2c2c; }
   .footer a:hover {
     transition: 0.2s;
-    color: #edb54b; }
+    color: #F2B035; }
 
 .cabins_header {
   background-image: url(/img/cabins_preview.webp);
@@ -691,7 +691,11 @@ img {
     position: absolute;
     right: 2.5rem;
     top: 2rem;
-    color: #f2c879; }
+    color: #F2B035;
+    transition: transform 300ms; }
+    .amenities_menu svg:hover {
+      color: #F4BA4E;
+      cursor: pointer; }
   .amenities_menu h3 {
     font-size: 1.5rem; }
     @media (min-width: 300px) and (max-width: 500px) {
@@ -944,35 +948,19 @@ img {
       opacity: 0.75; }
     .contact_form input:focus,
     .contact_form textarea:focus {
-      border: 1px solid #f2c879;
+      border: 1px solid #F2B035;
       outline: none; }
       .contact_form input:focus::placeholder,
       .contact_form textarea:focus::placeholder {
-        color: #f2c879; }
+        color: #F2B035; }
 
 .send_btn {
   flex: 1;
-  background-color: transparent;
-  border: 2px solid;
-  border-color: #c7c7c7;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  color: #c7c7c7;
-  border-radius: 0.7rem;
-  height: 3rem;
   margin-top: auto; }
-  .send_btn:hover {
-    background-color: #edb54b;
-    color: #fafafa;
-    cursor: pointer;
-    transition: 300ms;
-    border: 2px solid #edb54b; }
   @media (min-width: 300px) and (max-width: 500px) {
     .send_btn {
-      padding: 0.5rem 1.25rem;
-      font-weight: 700;
-      letter-spacing: 0.15rem;
-      margin: 1rem auto; } }
+      width: 50%;
+      margin: auto auto; } }
 
 .main_cabin {
   background-image: url(/img/cabins_preview.webp);
@@ -1032,7 +1020,7 @@ img {
       margin: auto; } }
   .cabin--description-title {
     font-weight: 700;
-    color: #f2c879;
+    color: #F2B035;
     font-size: 1rem; }
     @media (min-width: 300px) and (max-width: 500px) {
       .cabin--description-title {
@@ -1041,7 +1029,8 @@ img {
     margin: 1rem 0;
     line-height: 1.5;
     color: #e1e1e1;
-    font-size: 1rem; }
+    font-size: 1rem;
+    cursor: pointer; }
     @media (min-width: 300px) and (max-width: 500px) {
       .cabin--description p {
         text-align: center;
@@ -1074,3 +1063,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.hidden {
+  display: none; }
