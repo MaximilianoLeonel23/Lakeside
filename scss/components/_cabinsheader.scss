@@ -7,6 +7,7 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
   }
   &_container {
     display: flex;
@@ -25,18 +26,18 @@
     @include bp($mobile) {
       align-items: center;
       width: 100%;
-      padding: 10% 0;
+      padding: 15% 0;
       text-align: center;
-      margin: 6rem 0;
+      margin: 8rem 0;
     }
 
     p {
       width: 75%;
       color: $color-white;
-      color: darken($color-white, 5);
-      line-height: 2rem;
+      // color: darken($color-white, 5);
+      line-height: 1.5;
       font-size: $font-size-desktop-p;
-      font-weight: 300;
+      font-weight: 400;
       text-align: right;
       margin-left: auto;
 
@@ -50,12 +51,12 @@
 
   &_title {
     color: $color-white;
-    font-size: 2.5rem;
+    font-size: $font-size-desktop-h1;
     margin-bottom: 2rem;
     font-weight: 900;
 
     @include bp($mobile) {
-      font-size: 2rem;
+      font-size: $font-size-mobile-h1;
       margin-bottom: 1.5rem;
     }
   }
@@ -71,6 +72,20 @@
     //     height: 100%;
     // }
   }
+  // &_title--background {
+  //   position: absolute;
+  //   display: flex;
+  //   bottom: -10%;
+  //   left: -10%;
+  //   right: -10%;
+  //   overflow: hidden;
+  //   height: 10rem;
+  //   font-size: 10rem;
+  //   color: $color-white;
+  //   opacity: 0.25;
+  //   font-weight: 700;
+
+  // }
 
   &_circle {
     height: 7.5rem;
@@ -80,7 +95,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    
 
     @include bp($mobile) {
       opacity: 0;

@@ -3,7 +3,7 @@
 console.log("Hola Mundo");
 
 const openMenu = document.getElementById("open_menu");
-const logo = document.querySelector(".nav_logo");
+const logo = document.querySelector(".nav_logo_link");
 const navMenu = document.querySelector(".nav_menu");
 console.log(openMenu);
 

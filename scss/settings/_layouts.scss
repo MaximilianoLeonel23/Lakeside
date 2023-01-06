@@ -9,3 +9,12 @@
 // Paddings
 @include paddings(); 
 
+@mixin margins {
+    @for $i from 1 to 20 {
+        .m-#{$i * 5} {
+            margin: 0 $i * 5%;
+        }
+    }
+}
+
+@include margins();

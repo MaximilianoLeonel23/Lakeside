@@ -38,17 +38,22 @@
     }
   }
   &_logo {
-    font-size: $font-size-desktop-h2;
-    font-weight: 700;
+    font-size: $font-size-desktop-h3;
+    font-weight: 600;
+
+    &_link:hover {
+      color: $color-white;
+    }
 
     @include bp($mobile) {
-      font-size: $font-size-mobile-h2;
+      font-size: $font-size-mobile-h3;
       z-index: $z-index-menu;
     }
   }
 
   &_item {
     margin-left: 1rem;
+    font-size: $font-size-desktop-h4;
     font-weight: 300;
     letter-spacing: 0.05rem;
   }
@@ -82,5 +87,13 @@
 
   &_item {
     margin-right: 1rem;
+
+    & a {
+      color: $color-dark;
+
+      &:active {
+          color: $color-primary-alt;
+      }
+  }
   }
 }

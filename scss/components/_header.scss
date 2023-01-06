@@ -5,6 +5,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  position: relative;
 
   @include bp($mobile) {
     flex-direction: column;
@@ -24,16 +25,18 @@
       margin-bottom: 8rem;
     }
     p {
-      line-height: 1.75rem;
-      color: darken($color-white, 5);
+      line-height: 1.5;
+      line-height: 1.5;
       font-size: $font-size-desktop-p;
-      font-weight: 300;
+      font-weight: 400;
 
       @include bp($mobile) {
         font-size: $font-size-mobile-p;
         line-height: 1.5rem;
       }
     }
+
+    
   }
 
   &_background--overlay {
@@ -51,17 +54,21 @@
     height: 1px;
     width: 100%;
     background-color: $color-white;
-    margin: 1rem 0;
+    margin: 0.5rem 0;
   }
   &_title {
-    line-height: 2.5rem;
-    font-size: $font-size-desktop-h2;
+    line-height: 1.3;
+    font-size: $font-size-desktop-h1;
     color: $color-white;
+    
 
     @include bp($mobile) {
-      line-height: 2rem;
-      font-size: $font-size-mobile-h2;
+      line-height: 1.2;
+      font-size: $font-size-mobile-h1;
     }
+  }
+  &_btn {
+    margin-top: 1rem;
   }
 }
 

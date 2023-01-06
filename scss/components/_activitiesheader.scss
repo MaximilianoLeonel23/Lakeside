@@ -1,94 +1,91 @@
 .activities {
-    &_header {
-      background-image: url(/img/cayak_preview.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-    &_container {
-      display: flex;
-      flex-direction: column;
-      text-align: right;
-      z-index: $z-index-normal;
-      width: 60%;
-      margin-top: auto;
-      margin-bottom: auto;
-      margin-right: auto;
-      
-  
-      background-color: rgba(44, 44, 44, 0.5);
-      padding: 2.5% 2.5%;
-      // border: 1px solid $color-white;
-  
-      position: relative;
-  
-      @include bp($mobile) {
-        align-items: center;
-        width: 100%;
-        padding: 10% 0;
-        text-align: center;
-        margin: 6rem 0;
-      }
-  
-      p {
-        width: 75%;
-        color: $color-white;
-        color: darken($color-white, 5);
-        line-height: 2rem;
-        font-size: $font-size-desktop-p;
-        font-weight: 300;
-        text-align: left;
-  
-        @include bp($mobile) {
-          width: 90%;
-          text-align: center;
-          font-size: $font-size-mobile-p;
-        }
-      }
-    }
-  
-    &_title {
-      color: $color-white;
-      font-size: 2.5rem;
-      margin-bottom: 2rem;
-      font-weight: 900;
-      text-align: left;
-  
-      @include bp($mobile) {
-        font-size: 2rem;
-        margin-bottom: 1.5rem;
-        text-align: center;
-      }
-    }
-    &_background--overlay {
+  &_header {
+    background-image: url(/img/cayak.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  &_container {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    z-index: $z-index-normal;
+    width: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+
+    background-color: rgba(44, 44, 44, 0.5);
+    padding: 2.5% 2.5%;
+    // border: 1px solid $color-white;
+
+    position: relative;
+
+    @include bp($mobile) {
+      align-items: center;
       width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      position: absolute;
-      background-color: rgba(0, 0, 0, 0.35);
-  
-      // @include bp($mobile) {
-      //     height: 100%;
-      // }
+      padding: 10% 0;
+      text-align: center;
+      margin: 6rem 0;
     }
-  
-    &_circle {
-      height: 7.5rem;
-      width: 7.5rem;
-      background-color: darken($color-white, 10);
-      border-radius: 50%;
-      position: absolute;
-      top: 0;
-      right: 0;
+
+    p {
+      width: 75%;
+      color: $color-white;
       
-  
+      line-height: 1.5;
+      font-size: $font-size-desktop-p;
+      font-weight: 400;
+      text-align: left;
+
       @include bp($mobile) {
-        opacity: 0;
+        width: 90%;
+        text-align: center;
+        font-size: $font-size-mobile-p;
       }
     }
   }
-  
+
+  &_title {
+    color: $color-white;
+    font-size: $font-size-desktop-h1;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    text-align: left;
+
+    @include bp($mobile) {
+      font-size: $font-size-mobile-h1;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+  }
+  &_background--overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.35);
+
+    // @include bp($mobile) {
+    //     height: 100%;
+    // }
+  }
+
+  &_circle {
+    height: 7.5rem;
+    width: 7.5rem;
+    background-color: darken($color-white, 10);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include bp($mobile) {
+      opacity: 0;
+    }
+  }
+}

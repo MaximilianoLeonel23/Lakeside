@@ -1,23 +1,33 @@
-.book_btn {
-  padding: 1rem 2rem;
-  color: $color-primary-alt;
-  border: 2px solid $color-primary-alt;
-  background-color: transparent;
-  margin-top: 1rem;
-  border-radius: 0.25rem;
-  font-weight: 900;
-  letter-spacing: 0.25rem;
+.book--btn {
+  // padding: 1rem 2rem;
+  // color: $color-primary-alt;
+  // border: 2px solid $color-primary-alt;
+  // background-color: transparent;
+  // margin-top: 1rem;
+  // border-radius: 0.25rem;
+  // font-weight: 900;
+  // letter-spacing: 0.25rem;
 
+  background-color: $color-primary-alt;
+  border: 2px solid $color-primary-alt;
+  padding: 0.75rem 2rem;
+  font-size: $font-size-desktop-p;
+  color: $color-dark;
+  border-radius: 0.75rem;
+
+  font-weight: 500;
   @include bp($mobile) {
-    padding: 0.75rem 1.5rem;
-    font-weight: 700;
-    letter-spacing: 0.15rem;
-    margin-top: 2rem;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    font-size: $font-size-mobile-p;
+    
+    
   }
 
   &:hover {
-    background-color: $color-primary-alt;
-    color: $color-white;
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
+    color: $color-dark;
     cursor: pointer;
     transition: 300ms;
   }
@@ -34,16 +44,19 @@
 }
 
 // Botón de VIEW CABIN
-.cabins_section--btn {
+.ghost--btn {
   background-color: transparent;
   border: 2px solid;
   border-color: darken($color-white, 20);
   padding: 0.75rem 2rem;
-  font-size: 1rem;
-  color: darken($color-white, 20);
-  border-radius: 0.7rem;
-  width: 50%;
+  font-size: $font-size-desktop-p;
+  color: darken($color-white, 5);
+  border-radius: 0.75rem;
 
+  font-weight: 500;
+  & a {
+    color: $color-white;
+  }
   &:hover {
     background-color: $color-primary-alt;
     color: $color-dark;
@@ -54,9 +67,9 @@
 
   @include bp($mobile) {
     padding: 0.5rem 1.25rem;
-    font-weight: 700;
-    letter-spacing: 0.15rem;
+    font-weight: 400;
+    // letter-spacing: 0.15rem;
     margin: auto;
+    font-size: $font-size-mobile-p;
   }
 }
-
