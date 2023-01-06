@@ -7,7 +7,16 @@
 
   & h2 {
     font-size: $font-size-desktop-h2;
+    text-align: center;
+    color: $color-white;
+    font-weight: 900;
+    letter-spacing: 0.25rem;
+    opacity: 0.9;
+    @include bp($mobile) {
+      font-size: $font-size-mobile-h2;
+    }
   }
+
   &--container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -46,7 +55,7 @@
     }
   }
 
-  & h3 {
+  & h4 {
     font-weight: 900;
     // letter-spacing: 0.1rem;
     font-size: $font-size-desktop-h4;

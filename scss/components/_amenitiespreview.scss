@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 7.5rem;
-    padding-bottom: 5rem;
+    // padding-top: 7.5rem;
+    // padding-bottom: 5rem;
+    padding: 10% 5% 5%;
 
     & h2 {
       font-size: $font-size-desktop-h2;
@@ -64,7 +65,10 @@
       top: 2rem;
       color: $color-primary-alt;
       transition: transform 300ms;
-
+      width: 45px;
+      @include bp($mobile) {
+        width: 40px;
+      }
       &:hover {
         color: $color-primary-light200;
         cursor: pointer;
@@ -86,7 +90,6 @@
     top: 2rem;
     margin-bottom: 2rem;
     line-height: 1.5;
-    
   }
 
   &_list--item {

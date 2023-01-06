@@ -7,6 +7,11 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    position: relative;
+    @include bp($mobile) {
+      height: auto;
+      padding-bottom: 5rem;
+    }
   }
   &_container {
     display: flex;

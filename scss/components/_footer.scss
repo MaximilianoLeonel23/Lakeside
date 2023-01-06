@@ -1,53 +1,49 @@
 .footer {
-    
+  height: auto;
 
-    &_container {
-        display: flex;
-        justify-content: space-between;
-        padding: 2rem 0;
+  &_container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
 
-        @include bp($mobile) {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
+    @include bp($mobile) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
     }
-    &_information {
-        line-height: 1.5rem;
-        color: $color-dark;
-        @include bp($mobile) {
-            margin: 1rem 0;
-        }
+  }
+  &_information {
+    line-height: 1.5rem;
+    color: $color-dark;
+    @include bp($mobile) {
+      margin: 1rem 0;
     }
-    &_socialmedia {
-        display: flex;
-        @include bp($mobile) {
-            margin-bottom: 1rem;
-        }
+  }
+  &_socialmedia {
+    display: flex;
+    @include bp($mobile) {
+      margin-bottom: 1rem;
     }
+  }
 
-    &_link {
-        color: $color-dark;
+  &_link {
+    color: $color-dark;
+  }
+  &_link:not(:first-child) {
+    margin-left: 1rem;
+  }
+  &_item {
+    font-size: $font-size-desktop-p;
+    font-weight: 400;
+    line-height: 1.5;
+  }
 
-        
-    }
-    &_link:not(:first-child) {
-        margin-left: 1rem;
-    }
-    &_item {
-        font-size: $font-size-desktop-p;
-        font-weight: 400;
-        line-height: 1.5;
-        
-    }
+  & a {
+    color: $color-dark;
 
-    & a {
-        color: $color-dark;
-
-        &:hover {
-            transition: 0.2s;
-            color: $color-primary-alt;
-        }
+    &:hover {
+      transition: 0.2s;
+      color: $color-primary-alt;
     }
+  }
 }
-

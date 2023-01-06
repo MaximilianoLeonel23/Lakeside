@@ -42,14 +42,12 @@ arrowUp.addEventListener("click", function (e) {
   e.preventDefault;
   amenitiesList.classList.toggle("hidden");
   if (amenitiesList.classList.contains("hidden")) {
-    arrowUp.style.transform = "rotate(180deg)";
-  } else {
     arrowUp.style.transform = "";
+  } else {
+    arrowUp.style.transform = "rotate(180deg)";
   }
 });
 
-
-
 const cabinImg = document.querySelector(".cabin--img");
 const carrousel = document.querySelector(".cabin_carousel");
-const carrouselItem = document.querySelectorAll(".cabin_carousel--img")
+const carrouselItem = document.querySelectorAll(".cabin_carousel--img");
