@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap"
       rel="stylesheet"
     />
-    <title>Lakeside - Contact</title>
+    <title>Lakeside</title>
   </head>
   <body>
     <nav class="nav p-5">
@@ -31,7 +31,9 @@
         <li class="nav_item">
           <a href="/pages/activities.html" class="nav_link">ACTIVITIES</a>
         </li>
-        <li class="nav_item"><a href="/pages/contact.html" class="nav_link">CONTACT</a></li>
+        <li class="nav_item">
+          <a href="/pages/contact.html" class="nav_link">CONTACT</a>
+        </li>
         <ul class="social_menu">
           <li class="social_item">
             <a href="">
@@ -118,30 +120,75 @@
         ></path>
       </svg>
     </nav>
+    <div class="success_container" id="success_container">
+      <svg
+        class="success_close"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+        id="success_close"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
 
+      <div>
+        <h4>The form has been submitted successfully!</h4>
+        <p>We will be in touch with you shortly</p>
+      </div>
+    </div>
     <header class="contact_header p-5">
       <div class="contact_background--overlay"></div>
       <div class="contact_container">
         <h1 class="contact_title">CONTACT US</h1>
         <div class="contact_form_container">
-          <form class="contact_form" action="">
-            <input type="text" placeholder=" Name" />
-            <input type="text" placeholder=" Surname" />
-            <input type="text" placeholder=" Email" />
+          <form class="contact_form" id="form">
+            <div>
+              <input
+                class="input"
+                name="name"
+                type="text"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div>
+              <input
+                class="input"
+                name="surname"
+                type="text"
+                placeholder="Surname"
+              />
+            </div>
+            <div>
+              <input
+                class="input"
+                name="email"
+                type="text"
+                placeholder="Email"
+                required
+              />
+            </div>
             <textarea
-              name=""
-              id=""
+              name="message"
               cols="30"
               rows="5"
-              placeholder=" Message"
+              placeholder="Message"
+              minlength="10"
+              required
             ></textarea>
+            <button type="submit" class="send_btn solid--btn btn">SEND</button>
           </form>
-          <button type="submit" class="send_btn solid--btn btn">SEND</button>
         </div>
       </div>
       <!-- <div class="cabins_title--background">CABINS CABINS CABINS CABINS CABINS</div> -->
     </header>
-    
 
     <footer class="footer p-5">
       <div class="footer_container">
@@ -226,5 +273,6 @@
     </footer>
 
     <script src="/app/app.js"></script>
+    <script src="/app/submit.js"></script>
   </body>
 </html>

@@ -911,7 +911,7 @@ img {
 .contact_container {
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: 6rem auto;
   z-index: 0;
   width: 60%;
   background-color: rgba(44, 44, 44, 0.5);
@@ -957,10 +957,12 @@ img {
       margin: 2rem 0; } }
   .contact_form input,
   .contact_form textarea {
+    width: 100%;
     padding: 0.5rem 1rem;
     margin-top: 5%;
     color: #fafafa;
     font-size: 1rem;
+    border-radius: 0.5rem;
     background-color: transparent;
     box-shadow: none;
     border: 1px solid #fafafa; }
@@ -981,12 +983,33 @@ img {
         color: #F2B035; }
 
 .send_btn {
-  flex: 1;
-  margin-top: auto; }
+  margin: auto;
+  margin-top: 1rem;
+  width: 30%; }
   @media (min-width: 300px) and (max-width: 500px) {
     .send_btn {
-      width: 50%;
-      margin: auto auto; } }
+      width: 50%; } }
+
+.success_container {
+  position: fixed;
+  bottom: 5%;
+  left: 1rem;
+  z-index: 1500;
+  background-color: #fafafa;
+  box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  opacity: 0; }
+  .success_container h4 {
+    color: #5abd5a; }
+
+.success_close {
+  width: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem; }
+  .success_close:hover {
+    cursor: pointer; }
 
 .main_cabin {
   background-image: url(/img/cabins_preview.webp);

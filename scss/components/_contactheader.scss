@@ -17,7 +17,8 @@
   &_container {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 6rem auto;
+
     z-index: $z-index-normal;
     width: 60%;
     background-color: rgba(44, 44, 44, 0.5);
@@ -54,6 +55,7 @@
     //     height: 100%;
     // }
   }
+
   // &_title--background {
   //   position: absolute;
   //   display: flex;
@@ -87,11 +89,12 @@
     }
     & input,
     textarea {
+      width: 100%;
       padding: 0.5rem 1rem;
       margin-top: 5%;
       color: $color-white;
       font-size: $font-size-desktop-p;
-
+      border-radius: 0.5rem;
       background-color: transparent;
       box-shadow: none;
       border: 1px solid $color-white;
@@ -115,11 +118,37 @@
 }
 
 .send_btn {
-  flex: 1;
-  margin-top: auto;
+  margin: auto;
+  margin-top: 1rem;
+  width: 30%;
 
   @include bp($mobile) {
     width: 50%;
-    margin: auto auto;
+  }
+}
+
+.success_container {
+  position: fixed;
+  bottom: 5%;
+  left: 1rem;
+  z-index: $z-index-popover;
+  background-color: $color-white;
+  box-shadow: 0 1px 1rem rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+
+  opacity: 0;
+  & h4 {
+    color: rgb(90, 189, 90);
+  }
+}
+
+.success_close {
+  width: 1rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  &:hover {
+    cursor: pointer;
   }
 }
