@@ -41,6 +41,7 @@
     p {
       width: 75%;
       color: $color-white;
+      opacity: 0.8;
       
       line-height: 1.5;
       font-size: $font-size-desktop-p;
@@ -85,7 +86,8 @@
   &_circle {
     height: 7.5rem;
     width: 7.5rem;
-    background-color: darken($color-white, 10);
+    background-color: $color-white;
+    opacity: 0.2;
     border-radius: 50%;
     position: absolute;
     top: 0;

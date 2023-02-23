@@ -4,15 +4,15 @@ const showSuccess = document.getElementById("success_container");
 
 // Manejo de formulario
 function handleSubmit(e) {
-  e.preventDefault();
+  e.preventDefault()
+  // Para enviar formulario
   const infoUser = {
     name: e.target.name.value,
     surname: e.target.surname.value,
     email: e.target.email.value,
     message: e.target.message.value,
   };
-  console.log("El formulario fue enviado");
-  console.log(infoUser);
+  
   // Limpiamos los inputs
   e.target.name.value = "";
   e.target.surname.value = "";

@@ -1,14 +1,14 @@
 "use strict";
 
-console.log("Hola Mundo");
+
 
 const openMenu = document.getElementById("open_menu");
 const logo = document.querySelector(".nav_logo_link");
 const navMenu = document.querySelector(".nav_menu");
-console.log(openMenu);
+
 
 openMenu.addEventListener("click", function (e) {
-  e.preventDefault();
+  
   if (navMenu.classList.contains("nav_menu-hidden")) {
     navMenu.classList.remove("nav_menu-hidden");
     navMenu.classList.add("nav_menu-show");
@@ -39,7 +39,7 @@ const amenitiesList = document.querySelector(".amenities_list");
 const arrowUp = document.getElementById("arrowUp");
 
 arrowUp.addEventListener("click", function (e) {
-  e.preventDefault;
+  
   amenitiesList.classList.toggle("hidden");
   if (amenitiesList.classList.contains("hidden")) {
     arrowUp.style.transform = "";
@@ -48,6 +48,4 @@ arrowUp.addEventListener("click", function (e) {
   }
 });
 
-const cabinImg = document.querySelector(".cabin--img");
-const carrousel = document.querySelector(".cabin_carousel");
-const carrouselItem = document.querySelectorAll(".cabin_carousel--img");
+

@@ -42,6 +42,7 @@
   background-color: transparent;
   border: 1px solid $color-white;
   position: relative;
+  
   color: $color-white;
   @include bp($mobile) {
     margin-bottom: 5%;
@@ -66,23 +67,22 @@
     flex: 1;
   }
 
-  & a {
-    position: absolute;
-    bottom: 5%;
-    right: 15%;
-    color: $color-white;
-  }
-  & a:hover {
-    color: $color-primary-alt;
-  }
-  & svg {
-    position: absolute;
-    bottom: 4%;
-    right: 5%;
-  }
+  // & a {
+  //   position: absolute;
+  //   bottom: 5%;
+  //   right: 15%;
+  //   color: $color-white;
+    
+  // }
+  // & a:hover {
+  //   color: $color-primary-alt;
+  // }
+}
 
-  & svg:hover {
-    color: $color-primary-alt;
-    cursor: pointer;
-  }
+.more_btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
 }
